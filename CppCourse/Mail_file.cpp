@@ -9,6 +9,7 @@
 #include "Mail_file.h"
 #include <fstream>
 #include <iostream>
+#include <regex>
 
 // Load a message into the vectors
 Mail_file::Mail_file(const string& fn) {
@@ -29,4 +30,18 @@ Mail_file::Mail_file(const string& fn) {
 	}
 	if (msgs.size() == 0)
 		throw Bad_file();		// Didn't even get one message
+}
+
+// Place sender of message into s and return true if found
+// From line starts with 'From:'
+bool find_from_addr(const Message* m, string& s) {
+	regex from_address (R"(^From:\s(.*)$)");
+	smatch matches;
+	for (Line_iter b = m->begin(); b != m->end(); ++b) {
+		if (regex_search(*b, matches, from_address) && matches.size() >= 2) {
+			s = matches[1];
+			return true;
+		}
+	}
+	return false;
 }

@@ -11,17 +11,19 @@
 		B765127B1B6822A900C9A844 /* try_this.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B76512791B6822A900C9A844 /* try_this.cpp */; };
 		B76512811B68247C00C9A844 /* Exercise01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B765127F1B68247C00C9A844 /* Exercise01.cpp */; };
 		B76512841B68268200C9A844 /* Mail_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B76512821B68268200C9A844 /* Mail_file.cpp */; };
+		B790613E1B696689001AFCE6 /* my_mail.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = B76512851B68288200C9A844 /* my_mail.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B746FB431B61926A00A6A991 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = Test_files;
+			dstSubfolderSpec = 7;
 			files = (
+				B790613E1B696689001AFCE6 /* my_mail.txt in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
