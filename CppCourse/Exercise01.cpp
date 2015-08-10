@@ -10,7 +10,6 @@
 #include "Mail_file.h"
 #include "std_lib_facilities.h"
 
-// TODO here: Locate the file properly...
 // Testing mail file class
 void ex_01() {
 	// Check if it works...
@@ -22,8 +21,11 @@ void ex_01() {
 		// cout << "Message begin:\n" << *b->begin() << "... and end:\n" << *b->end() << endl;
 		string from_addr;
 		if (find_from_addr(&*b, from_addr))
-			cout << "Message from: " << from_addr << endl;
+			cout << "Message from: " << from_addr
+                 << "\n\tSubject: " << find_subject(&*b) << endl;
 		else
 			cout << "From line not found.\n";
 	}
+    
+    // HERE: TODO: Finish testing in Ex1 and carry on!
 }

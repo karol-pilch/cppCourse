@@ -45,3 +45,16 @@ bool find_from_addr(const Message* m, string& s) {
 	}
 	return false;
 }
+
+
+// Find the subject line and return it
+string find_subject(const Message* m) {
+    regex subject (R"(^Subject:\s(.*)$)");
+    smatch matches;
+    for (Line_iter b = m->begin(); b != m->end(); ++b) {
+        if (regex_search(*b, matches, subject) && matches.size() >= 2) {
+            return matches[1];
+        }
+    }
+    return "";
+}
