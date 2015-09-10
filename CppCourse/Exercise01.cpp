@@ -27,5 +27,4 @@ void ex_01() {
 			cout << "From line not found.\n";
 	}
     
-    // HERE: TODO: Finish testing in Ex1 and carry on!
 }

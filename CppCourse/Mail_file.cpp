@@ -24,7 +24,9 @@ Mail_file::Mail_file(const string& fn) {
 	auto b = lines.begin();
 	for (auto c=lines.begin(); c!=lines.end(); ++c) {
 		if (*c == "----" && b != c) {		// No empty messages allowed
-			msgs.push_back(Message(b,c));
+            Message new_message(Message(b,c));
+            msgs.push_back(new_message);
+            subjects.insert(pair<string, Message>(find_subject(&new_message), new_message));
 			b = c+1;
 		}
 	}

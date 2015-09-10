@@ -36,9 +36,11 @@ using Mess_iter = vector<Message>::const_iterator;
 
 // Holds all lines and manages access to messages
 struct Mail_file {
-	string fname;					// File name
+	string fname;				// File name
+    
 	vector<string> lines;		// Lines in order
 	vector<Message> msgs;		// Messages in order
+    multimap<string, Message> subjects;     // Messages sorted by subject
 	
 	Mail_file(const string&);	// Read a file into lines
 	

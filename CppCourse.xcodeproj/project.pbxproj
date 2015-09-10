@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		571158C91BA1B471008E2809 /* Exercise02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 571158C71BA1B471008E2809 /* Exercise02.cpp */; };
 		B746FB491B61926A00A6A991 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B746FB481B61926A00A6A991 /* main.cpp */; };
 		B765127B1B6822A900C9A844 /* try_this.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B76512791B6822A900C9A844 /* try_this.cpp */; };
 		B76512811B68247C00C9A844 /* Exercise01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B765127F1B68247C00C9A844 /* Exercise01.cpp */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		571158C71BA1B471008E2809 /* Exercise02.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise02.cpp; sourceTree = "<group>"; };
+		571158C81BA1B471008E2809 /* Exercise02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exercise02.h; sourceTree = "<group>"; };
 		B746FB451B61926A00A6A991 /* Chapter23 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Chapter23; sourceTree = BUILT_PRODUCTS_DIR; };
 		B746FB481B61926A00A6A991 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B746FB4F1B61972D00A6A991 /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 			children = (
 				B76512801B68247C00C9A844 /* Exercise01.h */,
 				B765127F1B68247C00C9A844 /* Exercise01.cpp */,
+				571158C81BA1B471008E2809 /* Exercise02.h */,
+				571158C71BA1B471008E2809 /* Exercise02.cpp */,
 				B76512831B68268200C9A844 /* Mail_file.h */,
 				B76512821B68268200C9A844 /* Mail_file.cpp */,
 			);
@@ -157,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571158C91BA1B471008E2809 /* Exercise02.cpp in Sources */,
 				B76512841B68268200C9A844 /* Mail_file.cpp in Sources */,
 				B746FB491B61926A00A6A991 /* main.cpp in Sources */,
 				B765127B1B6822A900C9A844 /* try_this.cpp in Sources */,
