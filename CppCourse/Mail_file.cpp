@@ -55,7 +55,7 @@ string find_subject(const Message* m) {
     smatch matches;
     for (Line_iter b = m->begin(); b != m->end(); ++b) {
         if (regex_search(*b, matches, subject) && matches.size() >= 2) {
-            return matches[1];
+            return matches[1];  // TODO: Why are we getting 'Subject' as well?
         }
     }
     return "";

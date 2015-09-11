@@ -41,28 +41,3 @@ class Log {
 		void add_indent() { for (int i=1; i<sub.size(); ++i) *os << "\t"; }
 };
 
-void Log::message(std::string m, unsigned int v)
-{
-	if (v>ver) return;
-	add_indent();
-	*os << name << " > " << sub.back().n << ": " << m << std::endl;
-}
-
-void Log::add_sub(const std::string& n, int v)
-{
-	sub.push_back(Log_sub(v,n));
-
-	if (log_subs) {
-		message("Started.",v);
-	}
-
-}
-
-void Log::pop_sub()
-{
-	if (log_subs) {
-		message("Terminating.",sub.back().ver);
-	}
-
-	sub.pop_back();
-}

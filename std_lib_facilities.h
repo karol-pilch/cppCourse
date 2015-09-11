@@ -121,21 +121,21 @@ class Timer {
 	long int duration_in_ms();
 };
 
-void Timer::start()
+inline void Timer::start()
 {
 	if (running) return;	// Can't start an already running timer
 	running = true;
 	b = chrono::system_clock::now();
 }
 
-void Timer::stop()
+inline void Timer::stop()
 {
 	if (!running) return;	// Can't stop a non-running timer
 	running = false;
 	e = chrono::system_clock::now();
 }
 
-long int Timer::duration_in_ms() 
+inline long int Timer::duration_in_ms() 
 {
 	if (running) 
 		return 0;

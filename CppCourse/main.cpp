@@ -9,9 +9,11 @@
 
 #include "try_this.h"
 #include "Exercise01.h"
+#include "Exercise02.h"
 
 int main(int argc, const char * argv[]) {
 	// tt_2();
-	ex_01();
+	// ex_01();
+    ex2();
 	return 0;
 }
