@@ -56,4 +56,7 @@ bool find_from_addr(const Message* m, string& s);
 // Return the subject or "" if doesn't exist
 string find_subject(const Message* m);
 
+// Print a Message
+ostream& operator<< (ostream& os, const Message& m);
+
 #endif /* defined(__CppCourse__Mail_file__) */

@@ -22,7 +22,7 @@ Mail_file::Mail_file(const string& fn) {
 		lines.push_back(s);
 	
 	auto b = lines.begin();
-	for (auto c=lines.begin(); c!=lines.end(); ++c) {
+	for (auto c=lines.begin(); c!=lines.end(); ++c) { //TODO: last message isn't added if there's no trailing '----'
 		if (*c == "----" && b != c) {		// No empty messages allowed
             Message new_message(Message(b,c));
             msgs.push_back(new_message);
@@ -55,8 +55,17 @@ string find_subject(const Message* m) {
     smatch matches;
     for (Line_iter b = m->begin(); b != m->end(); ++b) {
         if (regex_search(*b, matches, subject) && matches.size() >= 2) {
-            return matches[1];  // TODO: Why are we getting 'Subject' as well?
+            return matches[1];
         }
     }
     return "";
+}
+
+
+// Print a Message
+ostream& operator<< (ostream& os, const Message& m) {
+    for (auto b=m.begin(); b != m.end(); b++) {
+        os << "> " << *b << endl;
+    }
+    return os;
 }
