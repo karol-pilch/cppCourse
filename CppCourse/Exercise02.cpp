@@ -8,7 +8,7 @@
 
 #include "Exercise02.h"
 #include "Mail_file.h"
-#include "std_lib_facilities.h"     // You bastard!
+#include "std_lib_facilities.h"
 #include <string>
 
 void ex2() {
@@ -36,7 +36,9 @@ void ex2() {
         cout << "Found messages:\n";
         int count = 1;
         for (auto b = found_subjects.first; b != found_subjects.second; ++b) {
-            cout << "Message " << count++ << ":\n" << b->second << "*** END ***\n";
+            string from_address;
+            find_from_addr(&b->second, from_address);
+            cout << "Message " << count++ << " from " << from_address << endl << b->second << "*** END ***\n";
         }
     }
     else

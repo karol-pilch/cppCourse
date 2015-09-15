@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		571158C91BA1B471008E2809 /* Exercise02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 571158C71BA1B471008E2809 /* Exercise02.cpp */; };
 		572C9A031BA3051B00209D5F /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 572C9A021BA3051B00209D5F /* Log.cpp */; };
+		579B3A421BA84B61000688E9 /* Exercise03.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 579B3A401BA84B61000688E9 /* Exercise03.cpp */; };
+		579B3A451BA84FCC000688E9 /* dates.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 579B3A441BA84F43000688E9 /* dates.txt */; };
 		B746FB491B61926A00A6A991 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B746FB481B61926A00A6A991 /* main.cpp */; };
 		B765127B1B6822A900C9A844 /* try_this.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B76512791B6822A900C9A844 /* try_this.cpp */; };
 		B76512811B68247C00C9A844 /* Exercise01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B765127F1B68247C00C9A844 /* Exercise01.cpp */; };
@@ -23,6 +25,7 @@
 			dstPath = Test_files;
 			dstSubfolderSpec = 7;
 			files = (
+				579B3A451BA84FCC000688E9 /* dates.txt in CopyFiles */,
 				B790613E1B696689001AFCE6 /* my_mail.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,6 +36,9 @@
 		571158C71BA1B471008E2809 /* Exercise02.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise02.cpp; sourceTree = "<group>"; };
 		571158C81BA1B471008E2809 /* Exercise02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exercise02.h; sourceTree = "<group>"; };
 		572C9A021BA3051B00209D5F /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
+		579B3A401BA84B61000688E9 /* Exercise03.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise03.cpp; sourceTree = "<group>"; };
+		579B3A411BA84B61000688E9 /* Exercise03.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exercise03.h; sourceTree = "<group>"; };
+		579B3A441BA84F43000688E9 /* dates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dates.txt; path = CppCourse/Test_files/dates.txt; sourceTree = "<group>"; };
 		B746FB451B61926A00A6A991 /* Chapter23 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Chapter23; sourceTree = BUILT_PRODUCTS_DIR; };
 		B746FB481B61926A00A6A991 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B746FB4F1B61972D00A6A991 /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
@@ -60,6 +66,7 @@
 		B746FB3C1B61926A00A6A991 = {
 			isa = PBXGroup;
 			children = (
+				579B3A441BA84F43000688E9 /* dates.txt */,
 				B76512851B68288200C9A844 /* my_mail.txt */,
 				B746FB4F1B61972D00A6A991 /* Log.h */,
 				572C9A021BA3051B00209D5F /* Log.cpp */,
@@ -103,6 +110,8 @@
 				B765127F1B68247C00C9A844 /* Exercise01.cpp */,
 				571158C81BA1B471008E2809 /* Exercise02.h */,
 				571158C71BA1B471008E2809 /* Exercise02.cpp */,
+				579B3A411BA84B61000688E9 /* Exercise03.h */,
+				579B3A401BA84B61000688E9 /* Exercise03.cpp */,
 				B76512831B68268200C9A844 /* Mail_file.h */,
 				B76512821B68268200C9A844 /* Mail_file.cpp */,
 			);
@@ -168,6 +177,7 @@
 				572C9A031BA3051B00209D5F /* Log.cpp in Sources */,
 				571158C91BA1B471008E2809 /* Exercise02.cpp in Sources */,
 				B76512841B68268200C9A844 /* Mail_file.cpp in Sources */,
+				579B3A421BA84B61000688E9 /* Exercise03.cpp in Sources */,
 				B746FB491B61926A00A6A991 /* main.cpp in Sources */,
 				B765127B1B6822A900C9A844 /* try_this.cpp in Sources */,
 				B76512811B68247C00C9A844 /* Exercise01.cpp in Sources */,

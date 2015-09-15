@@ -10,10 +10,12 @@
 #include "try_this.h"
 #include "Exercise01.h"
 #include "Exercise02.h"
+#include "Exercise03.h"
 
 int main(int argc, const char * argv[]) {
 	// tt_2();
 	// ex_01();
-    ex2();
+    // ex2();
+    ex3();
 	return 0;
 }
